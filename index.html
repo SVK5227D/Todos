@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
+    <title>Todo's</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="backgroundbody">
+    <div class="outerinput">
+        <header>
+            <h2>
+                Todo's
+            </h2>
+        </header>
+        <!-- To show a popup notification -->
+        <div id="toast"></div>
+
+        <div>
+            <form id="form">
+                <input type="text" id="input" placeholder="Add new Todo..." class="inputfield"
+                    autocomplete="off"><button type="submit" id="btn">+</button>
+                <br>
+                <p id="listValue"></p>
+            </form>
+        </div>
+    </div>
+    <div class="outerinput2">
+        <div>
+            <h3>Todo's List</h3>
+        </div>
+        <!-- To view the task after add,delete,edit  -->
+        <div id="list" class="view"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
