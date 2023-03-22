@@ -38,7 +38,14 @@ function add() {
     }
     //Checking the duplicate value before storig list
     else if (isDuplicate) {
-        popupNotification("This value already entered in list");
+        if (EditList >= 0) {
+            input.value = '';
+            popupNotification("There is no change in your list");
+        }
+        else {
+            popupNotification("This value already entered in list");
+        }
+
     }
     //Adding and editing
     else {
@@ -95,7 +102,6 @@ function addingTodo() {
     if (listLength > 0) {
         document.getElementById('listValue').innerHTML = "Value in Todo List = " + listLength;
     }
-
 }
 
 //------------------------------       AddEventListener for edit and delete in listView     --------------------------
@@ -160,6 +166,6 @@ function popupNotification(msg) {
     document.body.appendChild(toast);
     setTimeout(() => {
         toast.remove();
-    }, 1500);
+    }, 1300);
 
 }

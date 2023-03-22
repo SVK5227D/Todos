@@ -135,11 +135,11 @@ body {
     border-radius: 5px;
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 20000px) {
     .backgroundbody{        
         margin-left: 30%;
         }
-  }
+  } 
   
   @media (max-width: 600px) {
     .backgroundbody{        
@@ -153,7 +153,7 @@ body {
     }
 
     .check{
-        margin-top: 2.5%;
+        margin-top: 3.9%;
         left: 15%;
     }
 
@@ -169,5 +169,10 @@ body {
     }
     .view{
         padding-left: 15%;
+    }
+    .toast{
+        left: 45%;
+        width: 40%;
+        margin-bottom: 2%;
     }
   }
