@@ -16,7 +16,7 @@ h3 {
 
 .backgroundbody {
     background-image: linear-gradient(to left bottom,
-            #36D72F,
+            #7be777,
             #21D059,
             #0089E2);
     /*To stop the repection for background linergradient*/
@@ -44,11 +44,19 @@ body {
     width: 65%;
 }
 
+.column {
+    float: left;
+    width: 50%;
+}
+
+
 .outerinput2 {
     border-radius: 2%;
     margin-top: 18px;
     background-color: #8AE5C0;
     width: 65%;
+    height: 100%;
+    display: table;
 }
 
 #btn {
@@ -73,13 +81,13 @@ body {
 
 .btnedit {
     position: absolute;
-    right: 40%;
+    left: 45%;
     margin-top: 10px;
     width: 40px;
     height: 25px;
 }
 
-.check{
+.check {
     position: absolute;
     margin-top: 1.2%;
     left: 32.5%;
@@ -87,7 +95,7 @@ body {
 
 .btndelete {
     position: absolute;
-    right: 35%;
+    left: 48%;
     margin-top: 10px;
     width: 40px;
     height: 25px;
@@ -136,43 +144,54 @@ body {
 }
 
 @media (max-width: 20000px) {
-    .backgroundbody{        
+    .backgroundbody {
         margin-left: 30%;
-        }
-  } 
-  
-  @media (max-width: 600px) {
-    .backgroundbody{        
+    }
+}
+
+@media (max-width: 600px) {
+    .backgroundbody {
         margin-left: 10%;
         padding-right: 15%;
-        }
+    }
+
     .outerinput {
-        width: 100%;    
+        width: 100%;
         right: 45%;
 
     }
 
-    .check{
-        margin-top: 3.9%;
-        left: 15%;
+    .check {
+        margin-top: 4%;
+        left: 10%;
     }
 
-    .outerinput2{
-        width: 100%;    
-        right: 45%;
+    .outerinput2 {
+        width: 100%;
+        display: table;
     }
-    .btnedit{
-        right: 30%;
+
+    .btnedit {
+        left: 25%;
+        width: 9%;
     }
-    .btndelete{
-        right: 20%;
+
+    .btndelete {   
+        left: 35%; 
+        width: 9%   ;
     }
-    .view{
+    .column{
+        width: 50%;
+        float: left;
+    }
+
+    .view {
         padding-left: 15%;
     }
-    .toast{
+
+    .toast {
         left: 45%;
         width: 40%;
         margin-bottom: 2%;
     }
-  }
+}

@@ -40,6 +40,7 @@ function add() {
     else if (isDuplicate) {
         if (EditList >= 0) {
             input.value = '';
+            document.getElementById('btn').innerHTML = "+";
             popupNotification("There is no change in your list");
         }
         else {
