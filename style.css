@@ -16,7 +16,7 @@ h3 {
 
 .backgroundbody {
     background-image: linear-gradient(to left bottom,
-            #7be777,
+            #36D72F,
             #21D059,
             #0089E2);
     /*To stop the repection for background linergradient*/
@@ -44,19 +44,11 @@ body {
     width: 65%;
 }
 
-.column {
-    float: left;
-    width: 50%;
-}
-
-
 .outerinput2 {
     border-radius: 2%;
     margin-top: 18px;
     background-color: #8AE5C0;
     width: 65%;
-    height: 100%;
-    display: table;
 }
 
 #btn {
@@ -81,21 +73,15 @@ body {
 
 .btnedit {
     position: absolute;
-    left: 45%;
+    right: 40%;
     margin-top: 10px;
     width: 40px;
     height: 25px;
 }
 
-.check {
-    position: absolute;
-    margin-top: 1.2%;
-    left: 32.5%;
-}
-
 .btndelete {
     position: absolute;
-    left: 48%;
+    right: 35%;
     margin-top: 10px;
     width: 40px;
     height: 25px;
@@ -128,6 +114,13 @@ body {
     font-style: italic;
     font-weight: bold;
     text-align: center;
+    padding-bottom: 5%;
+}
+
+.check {
+    position: absolute;
+    margin-top: 1.2%;
+    left: 32.5%;
 }
 
 .toast {
@@ -143,6 +136,9 @@ body {
     border-radius: 5px;
 }
 
+
+
+
 @media (max-width: 20000px) {
     .backgroundbody {
         margin-left: 30%;
@@ -155,43 +151,51 @@ body {
         padding-right: 15%;
     }
 
+    #form {
+        display: flex;
+        margin-right: 12%;
+    }
+
+    #listValue{
+        padding-bottom: 10%;
+    }
+
     .outerinput {
         width: 100%;
         right: 45%;
 
     }
 
-    .check {
-        margin-top: 4%;
-        left: 10%;
-    }
-
     .outerinput2 {
         width: 100%;
-        display: table;
+        right: 45%;
+    }
+
+    .value {
+        margin-left: 15%;
+        margin-bottom: 2%;
     }
 
     .btnedit {
-        left: 25%;
-        width: 9%;
+        right: 30%;
     }
 
-    .btndelete {   
-        left: 35%; 
-        width: 9%   ;
-    }
-    .column{
-        width: 50%;
-        float: left;
+    .btndelete {
+        right: 20%;
     }
 
     .view {
-        padding-left: 15%;
+        padding-left: 1%;
     }
 
     .toast {
         left: 45%;
         width: 40%;
         margin-bottom: 2%;
+    }
+
+    .check {
+        margin-top: 4%;
+        left: 13%;
     }
 }
