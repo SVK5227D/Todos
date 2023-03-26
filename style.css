@@ -10,15 +10,12 @@ h3 {
 }
 
 #form {
-    padding-left: 40px;
-    padding-bottom: 25px;
+    padding-left: 5%;
+    padding-bottom: 2%;
 }
 
 .backgroundbody {
-    background-image: linear-gradient(to left bottom,
-            #36D72F,
-            #21D059,
-            #0089E2);
+    background-color: #3450A1;
     /*To stop the repection for background linergradient*/
     height: 100%;
     background-repeat: no-repeat;
@@ -28,26 +25,21 @@ h3 {
     padding-top: 7%;
 }
 
-body {
-    justify-content: center;
-}
-
 .inputfield {
     height: 35px;
     width: 80%;
-    background-image: linear-gradient(#8AE5C0);
 }
 
 .outerinput {
     border-radius: 5px;
-    background-color: #8AE5C0;
+    background-color: #c9c8c8;
     width: 65%;
 }
 
 .outerinput2 {
     border-radius: 2%;
     margin-top: 18px;
-    background-color: #8AE5C0;
+    background-color: #e9e6e6;
     width: 65%;
 }
 
@@ -81,7 +73,7 @@ body {
 
 .btndelete {
     position: absolute;
-    right: 35%;
+    right: 37%;
     margin-top: 10px;
     width: 40px;
     height: 25px;
@@ -93,14 +85,8 @@ body {
     border: 2px solid black;
 }
 
-#error {
-    font-size: larger;
-    color: red;
-    padding-left: 35%;
-}
-
 .view {
-    padding-left: 60px;
+    padding-left: 15%;
 }
 
 .btnedit:active,
@@ -136,6 +122,19 @@ body {
     border-radius: 5px;
 }
 
+.toast2 {
+    position: absolute;
+    bottom: 50%;
+    right: 29%;
+    font-size: larger;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: rgb(0, 231, 46);
+    color: #000000;
+    font-weight: bolder;
+    border-radius: 5px;
+}
+
 
 
 
@@ -156,7 +155,7 @@ body {
         margin-right: 12%;
     }
 
-    #listValue{
+    #listValue {
         padding-bottom: 10%;
     }
 
@@ -185,10 +184,16 @@ body {
     }
 
     .view {
-        padding-left: 1%;
+        padding-left: 13%;
     }
 
     .toast {
+        left: 45%;
+        width: 40%;
+        margin-bottom: 2%;
+    }
+
+    .toast2 {
         left: 45%;
         width: 40%;
         margin-bottom: 2%;
