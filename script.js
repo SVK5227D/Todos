@@ -10,10 +10,10 @@ let listLength = list.length;
 //array to store
 let EditList = -1;
 // Passing empty value for toast message
-let msg;
 let msgText;
 //Calling function to getvalue in localstorage
 addingTodo();
+
 //submit
 form.addEventListener('submit', function (event) {
     event.preventDefault();
@@ -29,7 +29,7 @@ form.addEventListener('submit', function (event) {
 function add() {
     let inputValue = input.value;
     //checking duplicate value
-    var isDuplicate = list.some((store) => store.value.toUpperCase() === inputValue.toUpperCase());
+    var isDuplicate = list.some((store) => store.value.toUpperCase() == inputValue.toUpperCase());
     //Checking the input is empty or not empty
     if (inputValue.length == 0) {
         msgText = "Your entered empty text!!!!!!!!";
@@ -111,7 +111,7 @@ function addingTodo() {
 forward.addEventListener('click', (event) => {
     var target = event.target;
     var click = target.parentNode;
-    if (click.className !== 'listview') return;
+    if (click.className != 'listview') return;
     // Getting id to Edit or Delete the value in list
     var wl = click.id;
     // Getting action form the list button 
